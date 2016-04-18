@@ -1,0 +1,5 @@
+[module]
+name = kwin-xfce
+ico = kwin-xfce.png
+desc = Effects Kwin and Xfce
+command = kwin-xfce

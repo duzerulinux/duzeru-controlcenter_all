@@ -1,0 +1,5 @@
+[module]
+name = Idioma
+ico = language.png
+desc = Configure language support
+command = mintlocale

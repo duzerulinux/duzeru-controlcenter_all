@@ -1,0 +1,5 @@
+[module]
+name = Área de trabalho
+ico = desktopconf.png
+desc = Configure Desktop, Wallpaper, Menu options
+command = xfdesktop-settings

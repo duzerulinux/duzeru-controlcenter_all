@@ -1,0 +1,5 @@
+[module]
+name = Kernel
+ico = duzeru-kernel.png
+desc = Install Kernel in system
+command = duzeru-kernel

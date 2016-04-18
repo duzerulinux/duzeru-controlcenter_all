@@ -1,0 +1,5 @@
+[module]
+name = DuZeru Tweaks
+ico = duzerutweaks.png
+desc = Tweak and clean your system
+command = duzeru-tweaks

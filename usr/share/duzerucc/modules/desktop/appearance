@@ -1,0 +1,5 @@
+[module]
+name = Aparência
+ico = appearance.png
+desc = Style, Icons and Fonts Settings
+command = xfce4-appearance-settings

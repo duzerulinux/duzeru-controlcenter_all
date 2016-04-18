@@ -1,0 +1,5 @@
+[module]
+name = Gdebi
+ico = gdebi.png
+desc = 
+command = gdebi-gtk

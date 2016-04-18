@@ -1,0 +1,5 @@
+[module]
+name = Usuários e grupos
+ico = users-admin.png
+desc = Set your fullname and avatar for login
+command = users-admin

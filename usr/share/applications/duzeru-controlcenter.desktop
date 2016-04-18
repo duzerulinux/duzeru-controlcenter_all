@@ -1,0 +1,15 @@
+[Desktop Entry]
+Categories=Application;Settings
+Encoding=UTF-8
+Exec=duzeru-controlcenter
+Icon=duzeru-controlcenter
+StartupNotify=true
+Terminal=false
+Type=Application
+Name=DuZeru Control Center
+Name[pt_BR]=DuZeru Painel de controle
+Name[pt_PT]=DuZeru Painel de controle
+Comment=Control Panel
+Comment[pt_BR]=Painel de controle
+Comment[pt_PT]=Painel de controle
+GenericName=Control Center

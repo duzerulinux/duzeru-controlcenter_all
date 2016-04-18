@@ -1,0 +1,5 @@
+[module]
+name = Gerenciador de janelas
+ico = windowmanager.png
+desc = Window Manager Configure 
+command = xfwm4-settings

@@ -1,0 +1,5 @@
+[module]
+name = Synaptik
+ico = updatesinstallremove.png
+desc = 
+command = synaptic-pkexec

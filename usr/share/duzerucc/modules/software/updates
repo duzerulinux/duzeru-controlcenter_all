@@ -1,0 +1,5 @@
+[module]
+name = Updates
+ico = duzeruupdater.png
+desc = Update your computer
+command = gksudo /usr/scripts/updates-gui

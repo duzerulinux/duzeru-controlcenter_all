@@ -1,0 +1,5 @@
+[module]
+name = Conexões de redes
+ico = network.png
+desc = Manage network connections
+command = nm-connection-editor

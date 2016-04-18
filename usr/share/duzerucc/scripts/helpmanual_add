@@ -1,0 +1,9 @@
+#!/bin/bash
+#--------------------------------------------
+# Description: DuZeru Auto Login Dialogue
+#Fork Claudio A. Silva
+# Original Maitainer Author: Jerry Bezencon 2014
+#--------------------------------------------
+
+# Desktop
+cp /usr/share/duzerucc/resources/helpmanual.desktop ~/Desktop

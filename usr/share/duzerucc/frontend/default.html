@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"> <!-- Fork by Claudio A. Silva <claudiosilva@duzeru.org> Contribute João Pedro <joãopedro@duzeru.org> -->
+<head>
+  <meta charset="utf-8">
+  <link media="all" rel="stylesheet" type="text/css" href="css/main.css"/>
+  <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.main.js"></script>
+  <script>
+  $(document).ready(function(){
+    $(".button_show").click(function(){
+      $("ip").toggle();
+    });
+    $(".box_content").hide();
+    //toggle the componenet with class msg_body
+    $(".bazuka").click(function()
+    {
+      $(this).next(".box_content").slideToggle(500);
+    });
+
+  });
+  </script>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="content">
+      <div class="c1">
+        <div class="tabs">
+          <!--
+          Brian: The id='tab-{num}' is what determines content order, I just matched the tab IDs to the
+          ones at the bottom of this file.  For the rest, edit your markup similarly.
+        -->
+        <div id="tab-1" class="tab">
+          <article>
+            <div class="text-section">
+              <img id="slogan" src="icons/sys_info.png"/>
+
+              <h1>Meu computador</h1>
+
+              <p>Uma breve descrição do seu sistema</p>
+            </div>
+          </article>
+          <div id="contents">
+            <section class="gradient"><h1 style="padding-bottom:0px;padding-left:50px">Computador <button style="padding-bottom:0px;padding-left:50pxi" onclick="location.href=('refresh://')">Refresh</button></h1></section>
+            <table style="width:100%">
+              <tr>
+                <td width=20% align=right>OS: </td>
+                <td><span id="ty">{os}</span></td>
+              </tr>
+              <tr>
+
+              <tr>
+                <td width=20% align=right>Architecture: </td>
+                <td><span id="ty">{arc}</span></td>
+              </tr>
+
+              <tr>
+                <td width=20% align=right>User: </td>
+                <td><span id="ty">{host}</span></td>
+              </tr>
+              <tr>
+                <td width=20% align=right>Kernel: </td>
+                <td><span id="ty">{kernel}</span></td>
+              </tr>
+              <tr>
+                <td width=20% align=right>Updates: </td>
+                <td><span id="ty">{updates}</span></td>
+              </tr>
+            </table>
+            <br>
+
+            <h1 style="padding-bottom:0px;padding-left:65px">Devices</h1>
+            <table style="width:100%">
+                <td width=20% align=right>CPU:  </td>
+                <td><span id="ty">{processor}</span></td>
+              </tr>
+              <tr>
+                <td width=20% align=right>RAM: </td>
+                <td><span id="ty">{mem}</span></td>
+              </tr>
+              <tr>
+                <td width=20% align=right>Graphics: </td>
+                <td><span id="ty" align=right>{gfx}</span></td>
+              </tr>
+              <tr>
+                <td width=20% align=right>Sound: </td>
+                <td><span id="ty">{audio}</span></td>
+              </tr>
+              <tr>
+                <td width=20% align=right>HD: </td>
+                <td><span id="ty">{disk}</span></td>
+              </tr>
+            </table>
+            <br>
+
+            <section class="gradient"><h1 style="padding-bottom:0px;padding-left:60px">Internet <button style="padding-bottom:0px;padding-left:50pxi" class="button_show">Visualize/IP</button></h1></section>
+            <table style="width:100%">
+              <tr>
+                <td width=20% align=right>Status: </td>
+                <td><span id="ty">{netstatus}</span></td>
+              </tr>
+              <tr>
+                <td width=20% align=right>Local IP Address: </td>
+                <td><ip>***.***.***.***</ip><ip class="ips"><span id="ty">{netip}</span></ip></td>
+              </tr>
+              <tr>
+                <td width=20% align=right>Gateway: </td>
+                <td><ip>***.***.***.***</ip><ip class="ips"><span id="ty">{gateway}</span></ip></td>
+              </tr>
+              <tr>
+
+            </table>
+
+            <br>
+
+
+          </div>
+        </div></center>
+
+        <div id="tab-2" class="tab">
+          <article>
+            <div class="text-section">
+              <img id="slogan" src="icons/desktop.png"/>
+
+              <h1>Ambiente de trabalho</h1>
+
+              <p>Manage your desktop environment</p>
+<!--              <img class="help" onclick="location.href=('help://')" title="Help Manual" src="images/help.png"> -->
+            </div>
+          </article>
+          <div id="contents">
+            {desktop_list}
+
+            <div id="box">
+            </div>
+          </div>
+        </div>
+
+        <div id="tab-3" class="tab">
+          <article>
+            <div class="text-section">
+              <img id="slogan" src="icons/hardware.png"/>
+
+              <h1>Hardware</h1>
+
+              <p>Hardware management and configuration for your computer</p>
+<!--              <img class="help" onclick="location.href=('help://')" title="Open the Help Manual" src="images/help.png"> -->
+            </div>
+          </article>
+          <div id="contents">
+            {hardware_list}
+
+            <div id="box">
+            </div>
+          </div>
+        </div>
+
+        <div id="tab-4" class="tab">
+          <article>
+            <div class="text-section">
+              <img id="slogan" src="icons/samba.png"/>
+
+              <h1>Redes</h1>
+
+              <p>Manage and configure your home network and connections</p>
+<!--              <img class="help" onclick="location.href=('help://')" title="Open the Help Manual" src="images/help.png"> -->
+            </div>
+          </article>
+          <div id="contents">
+            {networking_list}
+          </div>
+        </div>
+
+        <div id="tab-5" class="tab">
+          <article>
+            <div class="text-section">
+              <img id="slogan" src="icons/packages.png"/>
+
+              <h1>Software Center</h1>
+
+              <p>Installing and maintaining software on your system</p>
+<!--              <img class="help" onclick="location.href=('help://')" title="Open the Help Manual" src="images/help.png"> -->
+            </div>
+          </article>
+          <div id="contents">
+            {software_list}
+            <br>
+
+          <div id="box">
+  <!--  GUIA DE SOFTWARE DESNECESSÁRIO          <div class="launcher bazuka"><img  src="/usr/share/duzerucc/frontend/images/guideinfo.png"/><h3>Guide</h3><span>Click here to toggle the Guide information</span></div> -->
+
+              <div class="box_content">
+                <p>
+                  <br><br><b>Edit Software Sources</b> - Change Country location and add PPAs.</p>
+                  <b>Install Updates</b> - Get the latest Updates for your Computer.</p>
+                  <b>Install/Remove Software</b> - Choose from 1000's of applications to install for free.</p>
+                  <b>Duzeru Software</b> - Install popular software such as Skype and Chrome.</p>
+                  <b>Duzeru Upgrade</b> - Upgrade duzeru from within a Series.</p>
+                  <b>Preferred Applications</b> - Select a program as your default eg. Web Browser - Firefox.</p>
+                  <br>
+
+                  <div align="center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="tab-6" class="tab">
+            <article>
+              <div class="text-section">
+                <img id="slogan" src="icons/system.png"/>
+
+                <h1>Sistema</h1>
+
+                <p>Configure and customize your computer</p>
+<!--                <img class="help" onclick="location.href=('help://')" title=" Help Manual" src="images/help.png"> -->
+              </div>
+            </article>
+            <div id="contents">
+              {system_list}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside id="sidebar">
+      <strong class="logo"><a onclick="location.href='about://hi'" href="#"></a></strong>
+      <ul class="tabset buttons">
+        <!-- Brian: This is what determins the sidebar order item order. Meaningful variables would have helped.-->
+        <li class="active">
+          <a href="#tab-1" class="ico1"><span>Meu computador</span><em></em></a>
+        </li>
+        <li>
+          <a href="#tab-2" class="ico3"><span>Desktop</span><em></em></a>
+        </li>
+        <li>
+          <a href="#tab-5" class="ico2"><span>Software</span><em></em></a>
+        </li>
+        <li>
+          <a href="#tab-3" class="ico5"><span>Hardware</span><em></em></a>
+        </li>
+        <li>
+          <a href="#tab-4" class="ico6"><span>Network</span><em></em></a>
+        </li>
+        <li>
+          <a href="#tab-6" class="ico4"><span>System</span><em></em></a>
+        </li>
+      </ul>
+    </aside>
+  </div>
+
+  <script type="text/javascript">
+  function changeTitle (title) {
+    document.title = title;
+    document.title = 'none';
+  }
+  //Sort each tab's div.contents
+  (function() {
+    var sorter = function(a, b) {
+      var aindex = $(a).data('menusort') || null,
+      bindex = $(b).data('menusort') || null;
+
+      if (aindex !== bindex && (Number.isFinite(aindex) || Number.isFinite(bindex))) {
+        return (aindex || bindex + 1) - (bindex || aindex + 1);
+      }
+
+      var atext = $(a).children('h3').text().trim(),
+      btext = $(b).children('h3').text().trim();
+      var s = [atext, btext];
+      s.sort();
+      if (s[0] == atext)
+      return -1;
+      else
+      return 1;
+    };
+    $('.tab div[id="contents"]').each(function(i, tab) {
+      var tabContentItems = $(tab).children('div.launcher');
+      tabContentItems.sort(sorter);
+      tabContentItems.detach().appendTo($(tab));
+    });
+  })()
+  </script>
+</body>
+</html>

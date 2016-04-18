@@ -1,0 +1,5 @@
+[module]
+name = Drivers
+ico = drivers.png
+desc = Install hardware drivers
+command = ddm

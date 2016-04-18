@@ -1,0 +1,5 @@
+[module]
+name = Configurações do LightDM
+ico = lightdm-gtk-greeter-settings.png
+desc = Lightdm Settings
+command = lightdm-gtk-greeter-settings-pkexec

@@ -1,0 +1,5 @@
+[module]
+name = Data e hora
+ico = time-admin.png
+desc = Date and time
+command = time-admin

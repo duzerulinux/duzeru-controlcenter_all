@@ -1,0 +1,5 @@
+[module]
+name = Sobre o DuZeru
+ico = about-duzeru.png
+desc = About DuZeru
+command = duzeru-about

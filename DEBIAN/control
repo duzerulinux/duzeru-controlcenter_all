@@ -1,0 +1,13 @@
+Package: duzeru-controlcenter
+Version: 1.0.1
+Maintainer: Claudio A. Silva <Claudio A. Silva>
+Original-Maintainer: Jerry Bezencon<valtam@linuxliteos.com>
+Section: base
+Priority: required
+Installed-Size: 283
+Depends: apt, zenity, gksu, scrot, gir1.2-webkit-3.0, python3-gi, python3-tk
+Homepage: http://duzeru.org
+Architecture: all
+Description: DuZeru Control Center
+ Painel de controle adaptado para o DuZeru base Debian com Xfce.
+ Control Panel adapter for Xfce DuZeru base Debian.

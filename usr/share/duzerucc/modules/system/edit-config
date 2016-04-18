@@ -1,0 +1,5 @@
+[module]
+name = Editor de configurações
+ico = gtk-preferences.png
+desc = Configure editor
+command = xfce4-settings-editor

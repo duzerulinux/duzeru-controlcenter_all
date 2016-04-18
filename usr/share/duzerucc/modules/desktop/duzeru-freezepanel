@@ -1,0 +1,5 @@
+[module]
+name = Bloquear paineis
+ico = duzeru-freezepanel.png
+desc = Freeze and unfreeze panel
+command = duzeru-freezepanel

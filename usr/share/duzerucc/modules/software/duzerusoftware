@@ -1,0 +1,5 @@
+[module]
+name = DuZeru Software
+ico = duzerusoftware.png
+desc = Software Center
+command = gksudo /usr/bin/mintinstall

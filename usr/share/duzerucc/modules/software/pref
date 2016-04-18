@@ -1,0 +1,5 @@
+[module]
+name = Apps preferidos
+ico = preferences.png
+desc = Preferred Applications
+command = exo-preferred-applications

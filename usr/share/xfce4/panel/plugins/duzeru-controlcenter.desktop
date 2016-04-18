@@ -1,0 +1,20 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+Encoding=UTF-8
+Name=DuZeru Control Center
+Name[cs]=DuZeru Control Center
+Name[da]=DuZeru Control Center
+Name[en_GB]=DuZeru Control Center
+Name[ja]=DuZeru Control Center
+Name[pl]=DuZeru Control Center
+Name[sk]=DuZeru Control Center
+Name[pt_BR]=DuZeru Painel de controle
+Name[pt_PT]=DuZeru Painel de controle
+Comment=Control and manage DuZeru
+Comment[en_GB]=Control and manage DuZeru
+Icon=duzeru-controlcenter
+X-XFCE-Module=duzerucontrolcenter
+X-XFCE-Internal=false
+
+[Desktop Entry]
+Name=duzeru-controlcenter.desktop

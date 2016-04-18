@@ -1,0 +1,5 @@
+[module]
+name = Bluetooth
+ico = bluetooth.png
+desc = Configure settings your displays
+command = blueman-manager

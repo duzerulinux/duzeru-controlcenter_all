@@ -1,0 +1,5 @@
+[module]
+name = Sessão de inicialização
+ico = session.png
+desc = Customize desktop startup applications
+command = xfce4-session-settings

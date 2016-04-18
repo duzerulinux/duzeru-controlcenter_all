@@ -1,0 +1,5 @@
+[module]
+name = Update
+ico = duzeruupdater.png
+desc = Update
+command = mintupdate

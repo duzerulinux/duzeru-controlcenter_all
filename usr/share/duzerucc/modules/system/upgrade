@@ -1,0 +1,5 @@
+[module]
+name = DuZeru Upgrade
+ico = update-manager.png
+desc = Upgrade Linux DuZeru within a Series
+command = /usr/bin/duzeru-upgrade-series2
